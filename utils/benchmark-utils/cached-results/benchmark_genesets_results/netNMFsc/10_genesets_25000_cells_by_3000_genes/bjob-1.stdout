@@ -1,0 +1,415 @@
+Sender: LSF System <lsfadmin@lx07>
+Subject: Job 16813507: <netNMFsc_25000_3000> in cluster <lila> Exited
+
+Job <netNMFsc_25000_3000> was submitted from host <lt12> by user <landm> in cluster <lila> at Thu Apr 27 12:06:31 2023
+Job was executed on host(s) <5*lx07>, in queue <cpuqueue>, as user <landm> in cluster <lila> at Thu Apr 27 12:06:32 2023
+</home/landm> was used as the home directory.
+</lila/data/peer/landm/Projects/spectra_benchmark/notebooks> was used as the working directory.
+Started at Thu Apr 27 12:06:32 2023
+Terminated at Thu Apr 27 22:39:55 2023
+Results reported at Thu Apr 27 22:39:55 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+source ~/.bashrc; conda activate spectra_v2; python /data/peer/landm/Projects/spectra_benchmark/notebooks/run_benchmark.py -m netNMFsc -n 25000 -p 3000 --n_pathways 10 -o /data/peer/landm/Projects/spectra_benchmark/benchmark_genesets_results_v2/netNMFsc/10_genesets_25000_cells_by_3000_genes/results-1.csv
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   173297.42 sec.
+    Max Memory :                                 8 GB
+    Average Memory :                             7.08 GB
+    Total Requested Memory :                     50.00 GB
+    Delta Memory :                               42.00 GB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   38005 sec.
+    Turnaround time :                            38004 sec.
+
+The output (if any) follows:
+
+/home/landm/anaconda3/envs/spectra_v2/lib/python3.7/site-packages/netNMFsc/utils.py:355: RuntimeWarning: invalid value encountered in true_divide
+  X[:,i] = X[:,i]/float(library_size)
+WARNING:tensorflow:From /home/landm/anaconda3/envs/spectra_v2/lib/python3.7/site-packages/netNMFsc/classes.py:92: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /home/landm/anaconda3/envs/spectra_v2/lib/python3.7/site-packages/netNMFsc/classes.py:92: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /home/landm/anaconda3/envs/spectra_v2/lib/python3.7/site-packages/netNMFsc/classes.py:93: The name tf.trace is deprecated. Please use tf.linalg.trace instead.
+
+WARNING:tensorflow:From /home/landm/anaconda3/envs/spectra_v2/lib/python3.7/site-packages/netNMFsc/classes.py:106: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+WARNING:tensorflow:From /home/landm/anaconda3/envs/spectra_v2/lib/python3.7/site-packages/netNMFsc/classes.py:107: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+WARNING:tensorflow:From /home/landm/anaconda3/envs/spectra_v2/lib/python3.7/site-packages/netNMFsc/classes.py:109: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From /home/landm/anaconda3/envs/spectra_v2/lib/python3.7/site-packages/netNMFsc/classes.py:112: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+WARNING:tensorflow:From /home/landm/anaconda3/envs/spectra_v2/lib/python3.7/site-packages/netNMFsc/classes.py:119: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2023-04-27 12:08:19.147732: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2023-04-27 12:08:19.159735: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-04-27 12:08:19.159818: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: lx07
+2023-04-27 12:08:19.159834: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: lx07
+2023-04-27 12:08:19.159961: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 515.43.4
+2023-04-27 12:08:19.160001: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 515.43.4
+2023-04-27 12:08:19.160009: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 515.43.4
+2023-04-27 12:08:19.160455: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2023-04-27 12:08:19.180471: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2023-04-27 12:08:19.181256: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x557e0223f2b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2023-04-27 12:08:19.181283: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/landm/anaconda3/envs/spectra_v2/lib/python3.7/site-packages/netNMFsc/classes.py:134: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+netNMFMU imported
+netNMFGD imported
+library size normalizing...
+5280 edges
+0 nan nan
+300 nan nan
+600 nan nan
+900 nan nan
+1200 nan nan
+1500 nan nan
+1800 nan nan
+2100 nan nan
+2400 nan nan
+2700 nan nan
+3000 nan nan
+3300 nan nan
+3600 nan nan
+3900 nan nan
+4200 nan nan
+4500 nan nan
+4800 nan nan
+5100 nan nan
+5400 nan nan
+5700 nan nan
+6000 nan nan
+6300 nan nan
+6600 nan nan
+6900 nan nan
+7200 nan nan
+7500 nan nan
+7800 nan nan
+8100 nan nan
+8400 nan nan
+8700 nan nan
+9000 nan nan
+9300 nan nan
+9600 nan nan
+9900 nan nan
+10200 nan nan
+10500 nan nan
+10800 nan nan
+11100 nan nan
+11400 nan nan
+11700 nan nan
+12000 nan nan
+12300 nan nan
+12600 nan nan
+12900 nan nan
+13200 nan nan
+13500 nan nan
+13800 nan nan
+14100 nan nan
+14400 nan nan
+14700 nan nan
+15000 nan nan
+15300 nan nan
+15600 nan nan
+15900 nan nan
+16200 nan nan
+16500 nan nan
+16800 nan nan
+17100 nan nan
+17400 nan nan
+17700 nan nan
+18000 nan nan
+18300 nan nan
+18600 nan nan
+18900 nan nan
+19200 nan nan
+19500 nan nan
+19800 nan nan
+20100 nan nan
+20400 nan nan
+20700 nan nan
+21000 nan nan
+21300 nan nan
+21600 nan nan
+21900 nan nan
+22200 nan nan
+22500 nan nan
+22800 nan nan
+23100 nan nan
+23400 nan nan
+23700 nan nan
+24000 nan nan
+24300 nan nan
+24600 nan nan
+24900 nan nan
+25200 nan nan
+25500 nan nan
+25800 nan nan
+26100 nan nan
+26400 nan nan
+26700 nan nan
+27000 nan nan
+27300 nan nan
+27600 nan nan
+27900 nan nan
+28200 nan nan
+28500 nan nan
+28800 nan nan
+29100 nan nan
+29400 nan nan
+29700 nan nan
+30000 nan nan
+30300 nan nan
+30600 nan nan
+30900 nan nan
+31200 nan nan
+31500 nan nan
+31800 nan nan
+32100 nan nan
+32400 nan nan
+32700 nan nan
+33000 nan nan
+33300 nan nan
+33600 nan nan
+33900 nan nan
+34200 nan nan
+34500 nan nan
+34800 nan nan
+35100 nan nan
+35400 nan nan
+35700 nan nan
+36000 nan nan
+36300 nan nan
+36600 nan nan
+36900 nan nan
+37200 nan nan
+37500 nan nan
+37800 nan nan
+38100 nan nan
+38400 nan nan
+38700 nan nan
+39000 nan nan
+39300 nan nan
+39600 nan nan
+39900 nan nan
+40200 nan nan
+40500 nan nan
+40800 nan nan
+41100 nan nan
+41400 nan nan
+41700 nan nan
+42000 nan nan
+42300 nan nan
+42600 nan nan
+42900 nan nan
+43200 nan nan
+43500 nan nan
+43800 nan nan
+44100 nan nan
+44400 nan nan
+44700 nan nan
+45000 nan nan
+45300 nan nan
+45600 nan nan
+45900 nan nan
+46200 nan nan
+46500 nan nan
+46800 nan nan
+47100 nan nan
+47400 nan nan
+47700 nan nan
+48000 nan nan
+48300 nan nan
+48600 nan nan
+48900 nan nan
+49200 nan nan
+49500 nan nan
+49800 nan nan
+50100 nan nan
+50400 nan nan
+50700 nan nan
+51000 nan nan
+51300 nan nan
+51600 nan nan
+51900 nan nan
+52200 nan nan
+52500 nan nan
+52800 nan nan
+53100 nan nan
+53400 nan nan
+53700 nan nan
+54000 nan nan
+54300 nan nan
+54600 nan nan
+54900 nan nan
+55200 nan nan
+55500 nan nan
+55800 nan nan
+56100 nan nan
+56400 nan nan
+56700 nan nan
+57000 nan nan
+57300 nan nan
+57600 nan nan
+57900 nan nan
+58200 nan nan
+58500 nan nan
+58800 nan nan
+59100 nan nan
+59400 nan nan
+59700 nan nan
+60000 nan nan
+60300 nan nan
+60600 nan nan
+60900 nan nan
+61200 nan nan
+61500 nan nan
+61800 nan nan
+62100 nan nan
+62400 nan nan
+62700 nan nan
+63000 nan nan
+63300 nan nan
+63600 nan nan
+63900 nan nan
+64200 nan nan
+64500 nan nan
+64800 nan nan
+65100 nan nan
+65400 nan nan
+65700 nan nan
+66000 nan nan
+66300 nan nan
+66600 nan nan
+66900 nan nan
+67200 nan nan
+67500 nan nan
+67800 nan nan
+68100 nan nan
+68400 nan nan
+68700 nan nan
+69000 nan nan
+69300 nan nan
+69600 nan nan
+69900 nan nan
+70200 nan nan
+70500 nan nan
+70800 nan nan
+71100 nan nan
+71400 nan nan
+71700 nan nan
+72000 nan nan
+72300 nan nan
+72600 nan nan
+72900 nan nan
+73200 nan nan
+73500 nan nan
+73800 nan nan
+74100 nan nan
+74400 nan nan
+74700 nan nan
+75000 nan nan
+75300 nan nan
+75600 nan nan
+75900 nan nan
+76200 nan nan
+76500 nan nan
+76800 nan nan
+77100 nan nan
+77400 nan nan
+77700 nan nan
+78000 nan nan
+78300 nan nan
+78600 nan nan
+78900 nan nan
+79200 nan nan
+79500 nan nan
+79800 nan nan
+80100 nan nan
+80400 nan nan
+80700 nan nan
+81000 nan nan
+81300 nan nan
+81600 nan nan
+81900 nan nan
+82200 nan nan
+82500 nan nan
+82800 nan nan
+83100 nan nan
+83400 nan nan
+83700 nan nan
+84000 nan nan
+84300 nan nan
+84600 nan nan
+84900 nan nan
+85200 nan nan
+85500 nan nan
+85800 nan nan
+86100 nan nan
+86400 nan nan
+86700 nan nan
+87000 nan nan
+87300 nan nan
+87600 nan nan
+87900 nan nan
+88200 nan nan
+88500 nan nan
+88800 nan nan
+89100 nan nan
+89400 nan nan
+89700 nan nan
+90000 nan nan
+90300 nan nan
+90600 nan nan
+90900 nan nan
+91200 nan nan
+91500 nan nan
+91800 nan nan
+92100 nan nan
+92400 nan nan
+92700 nan nan
+93000 nan nan
+93300 nan nan
+93600 nan nan
+93900 nan nan
+94200 nan nan
+94500 nan nan
+94800 nan nan
+95100 nan nan
+95400 nan nan
+95700 nan nan
+96000 nan nan
+96300 nan nan
+96600 nan nan
+96900 nan nan
+97200 nan nan
+97500 nan nan
+97800 nan nan
+98100 nan nan
+98400 nan nan
+98700 nan nan
+99000 nan nan
+99300 nan nan
+99600 nan nan
+99900 nan nan
+Traceback (most recent call last):
+  File "/data/peer/landm/Projects/spectra_benchmark/notebooks/run_benchmark.py", line 81, in <module>
+    main(args)
+  File "/data/peer/landm/Projects/spectra_benchmark/notebooks/run_benchmark.py", line 53, in main
+    time, peak_memory = netNMFsc_runtime(X, adj_matrix, p, n_components, n_inits = 1, max_iters = 100000, n_jobs = 1)
+  File "/lila/data/peer/landm/Projects/spectra_benchmark/notebooks/spectra_functions.py", line 99, in netNMFsc_runtime
+    W = operator.fit_transform()
+  File "/home/landm/anaconda3/envs/spectra_v2/lib/python3.7/site-packages/netNMFsc/classes.py", line 202, in fit_transform
+    warn("Did not converge after {} iterations. Error is {}. Try increasing `max_iter`.".format(self.max_iter, best_results['e']))
+KeyError: 'e'

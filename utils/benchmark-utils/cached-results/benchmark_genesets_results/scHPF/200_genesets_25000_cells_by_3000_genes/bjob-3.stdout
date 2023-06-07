@@ -1,0 +1,37 @@
+Sender: LSF System <lsfadmin@lf02>
+Subject: Job 16795793: <scHPF_25000_3000> in cluster <lila> Exited
+
+Job <scHPF_25000_3000> was submitted from host <ly07> by user <landm> in cluster <lila> at Tue Apr 25 01:08:57 2023
+Job was executed on host(s) <5*lf02>, in queue <cpuqueue>, as user <landm> in cluster <lila> at Tue Apr 25 09:41:25 2023
+</home/landm> was used as the home directory.
+</lila/data/peer/landm/Projects/spectra_benchmark/notebooks> was used as the working directory.
+Started at Tue Apr 25 09:41:25 2023
+Terminated at Tue Apr 25 10:03:59 2023
+Results reported at Tue Apr 25 10:03:59 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+source ~/.bashrc; conda activate spectra_v2; python /data/peer/landm/Projects/spectra_benchmark/notebooks/run_benchmark.py -m scHPF -n 25000 -p 3000 --n_pathways 200 -o /data/peer/landm/Projects/spectra_benchmark/benchmark_genesets_results_v2/scHPF/200_genesets_25000_cells_by_3000_genes/results-3.csv
+------------------------------------------------------------
+
+TERM_MEMLIMIT: job killed after reaching LSF memory usage limit.
+Exited with exit code 137.
+
+Resource usage summary:
+
+    CPU time :                                   1377.30 sec.
+    Max Memory :                                 250 GB
+    Average Memory :                             52.92 GB
+    Total Requested Memory :                     250.00 GB
+    Delta Memory :                               0.00 GB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                12
+    Run time :                                   1356 sec.
+    Turnaround time :                            32102 sec.
+
+The output (if any) follows:
+
+/scratch/lsftmp/1682399337.16795793: line 8: 86131 Killed                  python /data/peer/landm/Projects/spectra_benchmark/notebooks/run_benchmark.py -m scHPF -n 25000 -p 3000 --n_pathways 200 -o /data/peer/landm/Projects/spectra_benchmark/benchmark_genesets_results_v2/scHPF/200_genesets_25000_cells_by_3000_genes/results-3.csv

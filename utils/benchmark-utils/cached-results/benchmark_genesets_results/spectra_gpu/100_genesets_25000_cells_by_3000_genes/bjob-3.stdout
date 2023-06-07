@@ -1,0 +1,39 @@
+Sender: LSF System <lsfadmin@ll01>
+Subject: Job 16795822: <spectra_gpu_25000_3000> in cluster <lila> Done
+
+Job <spectra_gpu_25000_3000> was submitted from host <ly07> by user <landm> in cluster <lila> at Tue Apr 25 01:09:12 2023
+Job was executed on host(s) <5*ll01>, in queue <gpuqueue>, as user <landm> in cluster <lila> at Tue Apr 25 01:31:50 2023
+</home/landm> was used as the home directory.
+</lila/data/peer/landm/Projects/spectra_benchmark/notebooks> was used as the working directory.
+Started at Tue Apr 25 01:31:50 2023
+Terminated at Tue Apr 25 01:32:59 2023
+Results reported at Tue Apr 25 01:32:59 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+source ~/.bashrc; conda activate expimap; python /data/peer/landm/Projects/spectra_benchmark/notebooks/run_benchmark.py -m spectra_gpu -n 25000 -p 3000 --n_pathways 100 -o /data/peer/landm/Projects/spectra_benchmark/benchmark_genesets_results_v2/spectra_gpu/100_genesets_25000_cells_by_3000_genes/results-3.csv
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   189.00 sec.
+    Max Memory :                                 3 GB
+    Average Memory :                             1.40 GB
+    Total Requested Memory :                     75.00 GB
+    Delta Memory :                               72.00 GB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                22
+    Run time :                                   70 sec.
+    Turnaround time :                            1427 sec.
+
+The output (if any) follows:
+
+model create: 0.9842114448547363
+model initialize: 5.205262184143066
+model load to cuda: 0.2317357063293457
+  0%|          | 0/10000 [00:00<?, ?it/s]  0%|          | 1/10000 [00:00<1:53:59,  1.46it/s]  0%|          | 9/10000 [00:00<11:17, 14.74it/s]    0%|          | 17/10000 [00:00<06:04, 27.36it/s]  0%|          | 25/10000 [00:00<04:17, 38.78it/s]  0%|          | 33/10000 [00:01<03:25, 48.53it/s]  0%|          | 41/10000 [00:01<02:56, 56.41it/s]  0%|          | 49/10000 [00:01<02:39, 62.51it/s]  1%|          | 57/10000 [00:01<02:28, 67.12it/s]  1%|          | 65/10000 [00:01<02:20, 70.55it/s]  1%|          | 73/10000 [00:01<02:15, 73.03it/s]  1%|          | 81/10000 [00:01<02:12, 74.85it/s]  1%|          | 89/10000 [00:01<02:10, 76.15it/s]  1%|          | 97/10000 [00:01<02:08, 77.08it/s]  1%|          | 105/10000 [00:02<02:07, 77.80it/s]  1%|          | 113/10000 [00:02<02:06, 78.22it/s]  1%|          | 121/10000 [00:02<02:05, 78.53it/s]  1%|▏         | 129/10000 [00:02<02:05, 78.77it/s]  1%|▏         | 137/10000 [00:02<02:04, 78.91it/s]  1%|▏         | 145/10000 [00:02<02:04, 79.02it/s]  2%|▏         | 153/10000 [00:02<02:04, 79.04it/s]  2%|▏         | 161/10000 [00:02<02:04, 79.10it/s]  2%|▏         | 169/10000 [00:02<02:04, 79.21it/s]  2%|▏         | 177/10000 [00:02<02:03, 79.27it/s]  2%|▏         | 185/10000 [00:03<02:03, 79.29it/s]  2%|▏         | 193/10000 [00:03<02:03, 79.25it/s]  2%|▏         | 198/10000 [00:03<02:37, 62.05it/s]

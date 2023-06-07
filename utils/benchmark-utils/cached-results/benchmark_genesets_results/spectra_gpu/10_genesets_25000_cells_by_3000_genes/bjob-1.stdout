@@ -1,0 +1,39 @@
+Sender: LSF System <lsfadmin@ll01>
+Subject: Job 16795796: <spectra_gpu_25000_3000> in cluster <lila> Done
+
+Job <spectra_gpu_25000_3000> was submitted from host <ly07> by user <landm> in cluster <lila> at Tue Apr 25 01:09:07 2023
+Job was executed on host(s) <5*ll01>, in queue <gpuqueue>, as user <landm> in cluster <lila> at Tue Apr 25 01:09:11 2023
+</home/landm> was used as the home directory.
+</lila/data/peer/landm/Projects/spectra_benchmark/notebooks> was used as the working directory.
+Started at Tue Apr 25 01:09:11 2023
+Terminated at Tue Apr 25 01:09:41 2023
+Results reported at Tue Apr 25 01:09:41 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+source ~/.bashrc; conda activate expimap; python /data/peer/landm/Projects/spectra_benchmark/notebooks/run_benchmark.py -m spectra_gpu -n 25000 -p 3000 --n_pathways 10 -o /data/peer/landm/Projects/spectra_benchmark/benchmark_genesets_results_v2/spectra_gpu/10_genesets_25000_cells_by_3000_genes/results-1.csv
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   34.00 sec.
+    Max Memory :                                 3 GB
+    Average Memory :                             1.59 GB
+    Total Requested Memory :                     75.00 GB
+    Delta Memory :                               72.00 GB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                22
+    Run time :                                   32 sec.
+    Turnaround time :                            34 sec.
+
+The output (if any) follows:
+
+model create: 1.077711582183838
+model initialize: 0.7754201889038086
+model load to cuda: 0.06648802757263184
+  0%|          | 0/10000 [00:00<?, ?it/s]  0%|          | 1/10000 [00:00<1:27:09,  1.91it/s]  0%|          | 8/10000 [00:00<10:12, 16.32it/s]    0%|          | 15/10000 [00:00<05:51, 28.42it/s]  0%|          | 26/10000 [00:00<03:30, 47.44it/s]  0%|          | 37/10000 [00:00<02:39, 62.53it/s]  0%|          | 48/10000 [00:01<02:14, 74.00it/s]  1%|          | 59/10000 [00:01<02:00, 82.50it/s]  1%|          | 70/10000 [00:01<01:52, 88.66it/s]  1%|          | 81/10000 [00:01<01:46, 93.11it/s]  1%|          | 92/10000 [00:01<01:42, 96.31it/s]  1%|          | 103/10000 [00:01<01:40, 98.58it/s]  1%|          | 114/10000 [00:01<01:38, 99.94it/s]  1%|▏         | 125/10000 [00:01<01:37, 100.91it/s]  1%|▏         | 136/10000 [00:01<01:37, 101.61it/s]  1%|▏         | 147/10000 [00:02<01:36, 102.27it/s]  2%|▏         | 158/10000 [00:02<01:35, 102.73it/s]  2%|▏         | 169/10000 [00:02<01:35, 103.04it/s]  2%|▏         | 180/10000 [00:02<01:35, 103.21it/s]  2%|▏         | 191/10000 [00:02<01:34, 103.28it/s]  2%|▏         | 202/10000 [00:02<01:34, 103.29it/s]  2%|▏         | 213/10000 [00:02<01:34, 103.46it/s]  2%|▏         | 224/10000 [00:02<01:34, 103.51it/s]  2%|▏         | 235/10000 [00:02<01:34, 103.57it/s]  2%|▏         | 246/10000 [00:02<01:34, 103.71it/s]  3%|▎         | 257/10000 [00:03<01:33, 103.73it/s]  3%|▎         | 268/10000 [00:03<01:33, 103.84it/s]  3%|▎         | 279/10000 [00:03<01:33, 103.90it/s]  3%|▎         | 290/10000 [00:03<01:33, 103.97it/s]  3%|▎         | 301/10000 [00:03<01:33, 104.02it/s]  3%|▎         | 312/10000 [00:03<01:33, 104.03it/s]  3%|▎         | 323/10000 [00:03<01:33, 104.02it/s]  3%|▎         | 334/10000 [00:03<01:32, 104.04it/s]  3%|▎         | 345/10000 [00:03<01:32, 103.98it/s]  4%|▎         | 356/10000 [00:04<01:32, 104.00it/s]  4%|▎         | 367/10000 [00:04<01:32, 103.96it/s]  4%|▍         | 378/10000 [00:04<01:32, 103.92it/s]  4%|▍         | 389/10000 [00:04<01:32, 103.88it/s]  4%|▍         | 400/10000 [00:04<01:32, 103.92it/s]  4%|▍         | 411/10000 [00:04<01:32, 103.98it/s]  4%|▍         | 422/10000 [00:04<01:32, 104.00it/s]  4%|▍         | 433/10000 [00:04<01:31, 104.01it/s]  4%|▍         | 444/10000 [00:04<01:31, 103.96it/s]  5%|▍         | 455/10000 [00:04<01:31, 103.96it/s]  5%|▍         | 458/10000 [00:05<01:44, 91.35it/s] 

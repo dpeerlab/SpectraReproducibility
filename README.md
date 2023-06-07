@@ -21,7 +21,7 @@ https://doi.org/10.1101/2022.12.20.521311
 | Fig 2d | Bassez_immune_figures.ipynb |
 | Fig 2e | Fig2E.ipynb ** |
 | Fig 2f | Fig2F.ipynb ** |
-| Fig 2g | Fig3D1.py, Fig3D2.py ** |
+| Fig 2g | Fig3D1.py, Fig3D2.py, benchmark-figures.py |
 | Fig 3a | Bassez_immune_figures.ipynb | 
 | Fig 3b | Bassez_immune_figures.ipynb |
 | Fig 3c | Bassez_immune_figures.ipynb | 
@@ -63,8 +63,8 @@ https://doi.org/10.1101/2022.12.20.521311
 | Fig S5d | FigS5D.ipynb |
 | Fig S5e | FigS5E.ipynb |
 | Fig S5f | FigS5F.ipynb |
-| Fig S5g | Fig3D1.py, Fig3D2.py ** |
-| Fig S5h | ** |
+| Fig S5g | Fig3D1.py, Fig3D2.py, benchmark-figures.py |
+| Fig S5h | benchmark-figures.py |
 | Fig S6a | ** |
 | Fig S6b | Bassez_immune_figures.ipynb |
 | Fig S6c | Bassez_immune_figures.ipynb |

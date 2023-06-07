@@ -1,0 +1,37 @@
+Sender: LSF System <lsfadmin@ls02>
+Subject: Job 16795774: <slalom_25000_3000> in cluster <lila> Exited
+
+Job <slalom_25000_3000> was submitted from host <ly07> by user <landm> in cluster <lila> at Tue Apr 25 01:08:55 2023
+Job was executed on host(s) <5*ls02>, in queue <cpuqueue>, as user <landm> in cluster <lila> at Tue Apr 25 06:47:28 2023
+</home/landm> was used as the home directory.
+</lila/data/peer/landm/Projects/spectra_benchmark/notebooks> was used as the working directory.
+Started at Tue Apr 25 06:47:28 2023
+Terminated at Thu Apr 27 06:47:28 2023
+Results reported at Thu Apr 27 06:47:28 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+source ~/.bashrc; conda activate slalom; python /data/peer/landm/Projects/spectra_benchmark/notebooks/run_benchmark.py -m slalom -n 25000 -p 3000 --n_pathways 200 -o /data/peer/landm/Projects/spectra_benchmark/benchmark_genesets_results_v2/slalom/200_genesets_25000_cells_by_3000_genes/results-2.csv
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   772247.00 sec.
+    Max Memory :                                 13 GB
+    Average Memory :                             12.99 GB
+    Total Requested Memory :                     250.00 GB
+    Delta Memory :                               237.00 GB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                8
+    Run time :                                   172801 sec.
+    Turnaround time :                            193113 sec.
+
+The output (if any) follows:
+
+User defined signal 2

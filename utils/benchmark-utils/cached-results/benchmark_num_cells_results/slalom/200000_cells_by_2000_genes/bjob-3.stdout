@@ -1,0 +1,57 @@
+Sender: LSF System <lsfadmin@ls08>
+Subject: Job 16790705: <slalom_200000_2000> in cluster <lila> Done
+
+Job <slalom_200000_2000> was submitted from host <ls08> by user <landm> in cluster <lila> at Mon Apr 24 12:59:42 2023
+Job was executed on host(s) <5*ls08>, in queue <cpuqueue>, as user <landm> in cluster <lila> at Mon Apr 24 12:59:43 2023
+</home/landm> was used as the home directory.
+</lila/data/peer/landm/Projects/spectra_benchmark/notebooks> was used as the working directory.
+Started at Mon Apr 24 12:59:43 2023
+Terminated at Wed Apr 26 08:02:20 2023
+Results reported at Wed Apr 26 08:02:20 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+source ~/.bashrc; conda activate slalom; python /data/peer/landm/Projects/spectra_benchmark/notebooks/run_benchmark.py -m slalom -n 200000 -p 2000 -o /data/peer/landm/Projects/spectra_benchmark/benchmark_results/slalom/200000_cells_by_2000_genes/results-3.csv
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   506495.78 sec.
+    Max Memory :                                 29 GB
+    Average Memory :                             27.84 GB
+    Total Requested Memory :                     75.00 GB
+    Delta Memory :                               46.00 GB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                8
+    Run time :                                   154959 sec.
+    Turnaround time :                            154958 sec.
+
+The output (if any) follows:
+
+iteration 0
+iteration 100
+iteration 200
+iteration 300
+iteration 400
+iteration 500
+iteration 600
+iteration 700
+Switched off factor 9
+iteration 800
+iteration 900
+iteration 1000
+iteration 1100
+iteration 1200
+iteration 1300
+iteration 1400
+iteration 1500
+iteration 1600
+iteration 1700
+iteration 1800
+iteration 1900
+Maximally  9900% Genes per factor changed. Re-run with sparse annotated factors.

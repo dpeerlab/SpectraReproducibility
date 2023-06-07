@@ -1,0 +1,135 @@
+Sender: LSF System <lsfadmin@lx07>
+Subject: Job 16795740: <scHPF_25000_3000> in cluster <lila> Done
+
+Job <scHPF_25000_3000> was submitted from host <ly07> by user <landm> in cluster <lila> at Tue Apr 25 01:08:50 2023
+Job was executed on host(s) <5*lx07>, in queue <cpuqueue>, as user <landm> in cluster <lila> at Tue Apr 25 01:43:04 2023
+</home/landm> was used as the home directory.
+</lila/data/peer/landm/Projects/spectra_benchmark/notebooks> was used as the working directory.
+Started at Tue Apr 25 01:43:04 2023
+Terminated at Tue Apr 25 08:13:51 2023
+Results reported at Tue Apr 25 08:13:51 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+source ~/.bashrc; conda activate spectra_v2; python /data/peer/landm/Projects/spectra_benchmark/notebooks/run_benchmark.py -m scHPF -n 25000 -p 3000 --n_pathways 20 -o /data/peer/landm/Projects/spectra_benchmark/benchmark_genesets_results_v2/scHPF/20_genesets_25000_cells_by_3000_genes/results-1.csv
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   80121.39 sec.
+    Max Memory :                                 51 GB
+    Average Memory :                             46.28 GB
+    Total Requested Memory :                     250.00 GB
+    Delta Memory :                               199.00 GB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                12
+    Run time :                                   23448 sec.
+    Turnaround time :                            25501 sec.
+
+The output (if any) follows:
+
+[Iter.    0]  loss:2897.366212  pct:100.000000000
+[Iter.   10]  loss:25.953211  pct:-99.104248155
+[Iter.   20]  loss:25.930601  pct:-0.087118775
+[Iter.   30]  loss:24.220303  pct:-6.595674765
+[Iter.   40]  loss:7.694320  pct:-68.231942115
+[Iter.   50]  loss:5.238595  pct:-31.916068447
+[Iter.   60]  loss:4.978278  pct:-4.969214026
+[Iter.   70]  loss:4.737240  pct:-4.841800620
+[Iter.   80]  loss:4.605562  pct:-2.779643057
+[Iter.   90]  loss:4.555890  pct:-1.078525276
+[Iter.  100]  loss:4.529217  pct:-0.585452917
+[Iter.  110]  loss:4.511404  pct:-0.393300317
+[Iter.  120]  loss:4.498392  pct:-0.288426169
+[Iter.  130]  loss:4.488277  pct:-0.224838890
+[Iter.  140]  loss:4.479736  pct:-0.190307671
+[Iter.  150]  loss:4.471624  pct:-0.181074828
+[Iter.  160]  loss:4.462744  pct:-0.198596575
+[Iter.  170]  loss:4.452050  pct:-0.239631201
+[Iter.  180]  loss:4.439624  pct:-0.279088572
+[Iter.  190]  loss:4.426969  pct:-0.285059687
+[Iter.  200]  loss:4.415156  pct:-0.266834628
+[Iter.  210]  loss:4.404276  pct:-0.246433893
+[Iter.  220]  loss:4.394034  pct:-0.232533156
+[Iter.  230]  loss:4.384084  pct:-0.226450725
+[Iter.  240]  loss:4.374120  pct:-0.227279977
+[Iter.  250]  loss:4.364118  pct:-0.228659731
+[Iter.  260]  loss:4.354377  pct:-0.223210932
+[Iter.  270]  loss:4.344512  pct:-0.226559624
+[Iter.  280]  loss:4.334427  pct:-0.232115359
+[Iter.  290]  loss:4.323926  pct:-0.242286419
+[Iter.  300]  loss:4.312929  pct:-0.254308191
+[Iter.  310]  loss:4.301851  pct:-0.256866287
+[Iter.  320]  loss:4.290923  pct:-0.254032465
+[Iter.  330]  loss:4.280622  pct:-0.240072803
+[Iter.  340]  loss:4.271063  pct:-0.223292132
+[Iter.  350]  loss:4.262251  pct:-0.206320490
+[Iter.  360]  loss:4.254158  pct:-0.189874792
+[Iter.  370]  loss:4.246552  pct:-0.178796922
+[Iter.  380]  loss:4.239477  pct:-0.166602001
+[Iter.  390]  loss:4.233096  pct:-0.150527025
+[Iter.  400]  loss:4.227130  pct:-0.140926767
+[Iter.  410]  loss:4.221504  pct:-0.133083110
+[Iter.  420]  loss:4.216284  pct:-0.123658662
+[Iter.  430]  loss:4.211360  pct:-0.116792677
+[Iter.  440]  loss:4.206695  pct:-0.110759062
+[Iter.  450]  loss:4.202199  pct:-0.106873866
+[Iter.  460]  loss:4.197895  pct:-0.102429890
+[Iter.  470]  loss:4.193811  pct:-0.097300609
+[Iter.  480]  loss:4.189822  pct:-0.095102928
+[Iter.  490]  loss:4.186117  pct:-0.088435947
+[Iter.  500]  loss:4.182518  pct:-0.085968947
+[Iter.  510]  loss:4.179020  pct:-0.083624523
+[Iter.  520]  loss:4.175690  pct:-0.079683507
+[Iter.  530]  loss:4.172445  pct:-0.077714016
+[Iter.  540]  loss:4.169373  pct:-0.073627927
+[Iter.  550]  loss:4.166356  pct:-0.072371554
+[Iter.  560]  loss:4.163465  pct:-0.069385847
+[Iter.  570]  loss:4.160631  pct:-0.068073680
+[Iter.  580]  loss:4.157911  pct:-0.065368344
+[Iter.  590]  loss:4.155302  pct:-0.062759194
+[Iter.  600]  loss:4.152729  pct:-0.061904344
+[Iter.  610]  loss:4.150256  pct:-0.059550636
+[Iter.  620]  loss:4.147872  pct:-0.057455574
+[Iter.  630]  loss:4.145495  pct:-0.057302581
+[Iter.  640]  loss:4.143225  pct:-0.054765015
+[Iter.  650]  loss:4.141057  pct:-0.052319181
+[Iter.  660]  loss:4.138942  pct:-0.051074792
+[Iter.  670]  loss:4.136858  pct:-0.050347447
+[Iter.  680]  loss:4.134820  pct:-0.049258335
+[Iter.  690]  loss:4.132833  pct:-0.048068305
+[Iter.  700]  loss:4.130882  pct:-0.047195270
+[Iter.  710]  loss:4.128993  pct:-0.045728059
+[Iter.  720]  loss:4.127164  pct:-0.044291995
+[Iter.  730]  loss:4.125381  pct:-0.043224586
+[Iter.  740]  loss:4.123635  pct:-0.042305888
+[Iter.  750]  loss:4.121928  pct:-0.041391679
+[Iter.  760]  loss:4.120222  pct:-0.041386665
+[Iter.  770]  loss:4.118561  pct:-0.040335062
+[Iter.  780]  loss:4.116944  pct:-0.039241667
+[Iter.  790]  loss:4.115418  pct:-0.037084464
+[Iter.  800]  loss:4.113944  pct:-0.035815866
+[Iter.  810]  loss:4.112471  pct:-0.035794498
+[Iter.  820]  loss:4.111039  pct:-0.034828616
+[Iter.  830]  loss:4.109629  pct:-0.034295861
+[Iter.  840]  loss:4.108290  pct:-0.032574824
+[Iter.  850]  loss:4.106949  pct:-0.032635563
+[Iter.  860]  loss:4.105630  pct:-0.032119770
+[Iter.  870]  loss:4.104411  pct:-0.029704323
+[Iter.  880]  loss:4.103236  pct:-0.028619224
+[Iter.  890]  loss:4.102081  pct:-0.028147640
+[Iter.  900]  loss:4.100960  pct:-0.027338166
+[Iter.  910]  loss:4.099849  pct:-0.027088000
+[Iter.  920]  loss:4.098747  pct:-0.026882223
+[Iter.  930]  loss:4.097689  pct:-0.025799163
+[Iter.  940]  loss:4.096634  pct:-0.025756265
+[Iter.  950]  loss:4.095464  pct:-0.028550160
+[Iter.  960]  loss:4.094400  pct:-0.025994218
+[Iter.  970]  loss:4.093297  pct:-0.026922117
+[Iter.  980]  loss:4.092246  pct:-0.025686865
+[Iter.  990]  loss:4.091248  pct:-0.024388076
